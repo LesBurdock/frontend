@@ -1,7 +1,4 @@
 
-
-console.log("hello")
-
 function getEmail(){
     let email = document.querySelector("#email_adress");
    let text = document.getElementById("message")
