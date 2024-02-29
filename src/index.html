@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="./output.css" rel="stylesheet">
+  <script type="text/javascript" src="./app.js"></script>
+  
+  </head>
+  
+  <body>
+    <div class="box_size">
+      <div id="message" class="box-border bg-white p-4 rounded-lg grid grid-rows-2 grid-col-1 md:grid-cols-2 grid-rows-1 gap-4">
+        <div class=" text-xs text-[#330033] py-8">
+          <h1 class="font-bold text-[#330033] text-3xl py-2">Stay updated!</h1>
+          <p class="py-2 text-xs">Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="py-2">
+            <li class="icon-list"><img src="./assets/images/icon-list.svg" alt="tick" />
+              <p class="px-2">Product discovery and building what matters</p>
+            </li>
+            <li class="icon-list"><img src="./assets/images/icon-list.svg" alt="tick"/>
+              <p class="px-2">Measuring to ensure updates are a success</p>
+            </li>
+            <li class="icon-list"><img src="./assets/images/icon-list.svg" alt="tick"/>
+              <p class="px-2">And much more!</p>
+            </li>
+          </ul>
+          <form id="subscribe_frm" method="GET" class="py-2">
+            <label for="email_adress">Email address</label><br>
+            <input type=text id="email_adress" name="email_adress" placeholder="email@company.com" class="border-2 p-2 my-2 px-8 w-full"></input>
+            <button onclick="getEmail()"
+              class="p-8 py-2 my-2 font-medium text-white rounded-md hover:bg-blue-500 bg-[#330033] w-full">Subscribe to monthly
+              newsletter</button>
+          </form>
+        </div>
+        <div class="row-start-1 md:col-start-2">
+          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="My Happy SVG" class="object-cover" />
+        </div>
+      </div>
+    </div>
+    </body>
+  
+  </html>
